@@ -27,7 +27,11 @@
 	}
 	function salam2(){
 		a = a + 1;
-		document.getElementById("count").innerHTML = a;
+		if (a<=50) {
+			document.getElementById("count").innerHTML = a;
+		}else{
+			return a=50;
+		}
 	}
 
 </script>
