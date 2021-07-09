@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS counter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="flex-container">
+		<div>
+			<h1 style="color: white; font-weight: bold; font-size: 70px;">COUNTER</h1>
+			<h2 style="color: green; font-size: 200px;" id="count">0</h2>
+			<button onclick="salam()">LOWER COUNT</button><br><br>
+			<button onclick="salam2()">ADD COUNT</button>
+		</div>
+	</section>
+</body>
+<script>
+	var a =0;
+	document.getElementById("count").innerHTML = a;
+	function salam(){
+		a = a - 1;
+		if (a>=0) {
+			document.getElementById("count").innerHTML = a;
+		}else{
+			return a=0;
+		}	
+	}
+	function salam2(){
+		a = a + 1;
+		document.getElementById("count").innerHTML = a;
+	}
+
+</script>
+</html>
